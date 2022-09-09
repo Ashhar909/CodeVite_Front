@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hello = () => {
+const Privacy = () => {
   return (
     <div className='container my-3'>
       Hello
@@ -8,4 +8,4 @@ const Hello = () => {
   )
 }
 
-export default Hello
+export default Privacy

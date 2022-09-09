@@ -1,11 +1,11 @@
 import './App.css';
-import Hello from './Hello';
+import Privacy from './components/Miscellaneous/Privacy';
 
 function App() {
   return (
     <div className="App">
       {/* <h1>Hey</h1> */}
-      <Hello/>
+      <Privacy/>
     </div>
   );
 }
