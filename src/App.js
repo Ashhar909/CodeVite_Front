@@ -4,6 +4,7 @@ import Privacy from './components/miscellaneous/Privacy';
 import Careers from './components/home/Careers';
 import Terms from './components/miscellaneous/Terms';
 import Home from './components/home/Home';
+import Navbar from './components/constants/Navbar';
 
 function App() {
   return (
