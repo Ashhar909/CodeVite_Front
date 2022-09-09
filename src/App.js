@@ -10,7 +10,8 @@ import Powershot from './components/explore/Powershot';
 import Skill from './components/miscellaneous/Skill';
 import Refund from './components/miscellaneous/Refund'
 import Pricing from './components/miscellaneous/Pricing'
-import Terms from './components/miscellaneous/Terms';
+import Terms from './components/miscellaneous/TermsCondi';
+
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
           <Route exact path="/powershot" element={<Powershot />} />
 
           <Route exact path="/privacy" element={<Privacy />} />
-          <Route exact path="/terms" element={<Terms />} />
+          <Route exact path="/term" element={<Terms />} />
           <Route exact path="/skill" element={<Skill />} />
           <Route exact path="/refund" element={<Refund />} />
           <Route exact path="/pricing" element={<Pricing />} />

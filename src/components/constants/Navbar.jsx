@@ -48,15 +48,15 @@ const Navbar = () => {
             >
               <ul className="navbar-nav">
                 <li className="nav-item dropdown">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
-                    href="/voyage"
+                    to="/voyage"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Explore
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu dropdown-menu-dark">
                     <li>
                       <Link className="dropdown-item" to="/powershot">
@@ -79,18 +79,18 @@ const Navbar = () => {
             >
               <ul className="navbar-nav">
                 <li className="nav-item dropdown">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
-                    href="/terms"
+                    to="/terms"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Miscellaneous
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu dropdown-menu-dark">
                     <li>
-                      <Link className="dropdown-item" to="/terms">
+                      <Link className="dropdown-item" to="/term">
                         Terms and Conditions
                       </Link>
                     </li>

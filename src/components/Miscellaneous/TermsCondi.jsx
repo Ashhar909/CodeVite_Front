@@ -383,7 +383,7 @@ const Terms = () => {
         </p>
       </section>
     </div>
-  );
-};
+  )
+}
 
 export default Terms;
