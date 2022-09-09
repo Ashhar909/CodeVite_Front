@@ -1,82 +1,123 @@
+import { Link } from "react-router-dom";
 import React from "react";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             Navbar
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Link
-                </a>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="/"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" href="/">Disabled</a>
-              </li>
-            </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+
+          <div className="d-flex justify-content-end mx-5">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarNavDarkDropdown"
+            >
+              <ul className="navbar-nav">
+                <li className="nav-item dropdown">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    to="/"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Home
+                  </Link>
+                  <ul className="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <Link className="dropdown-item" to="/careers">
+                        Careers
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/faqs">
+                        FaQs
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              className="collapse navbar-collapse"
+              id="navbarNavDarkDropdown"
+            >
+              <ul className="navbar-nav">
+                <li className="nav-item dropdown">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    to="/voyage"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Explore
+                  </Link>
+                  <ul className="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <Link className="dropdown-item" to="/powershot">
+                        Powershot
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/voyage">
+                        Bon-Voyage
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              className="collapse navbar-collapse"
+              id="navbarNavDarkDropdown"
+            >
+              <ul className="navbar-nav">
+                <li className="nav-item dropdown">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    to="/terms"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Miscellaneous
+                  </Link>
+                  <ul className="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <Link className="dropdown-item" to="/term">
+                        Terms and Conditions
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/privacy">
+                        Privacy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/refund">
+                        Refund
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/pricing">
+                        Pricing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/skill">
+                        Skills
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
