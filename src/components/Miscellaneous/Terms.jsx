@@ -5,7 +5,7 @@ const Terms = () => {
     <div>
       <h1>Terms and Conditions</h1>
       <section id="overview">
-        <h3>Overview</h3>
+        <h3>OVERVIEW</h3>
         <p>
           This website is operated by Codevita Live. Throughout the site, the
           terms “we”, “us” and “our” refer to Codevita Live offers this website,
@@ -35,7 +35,21 @@ const Terms = () => {
           acceptance of those changes.
         </p>
       </section>
-      <section id="section1"></section>
+      <section id="section1">
+        <h3>SECTION 1 - </h3>
+        <p>
+          By agreeing to these Terms of Service, you represent that you are at
+          least the age of majority in your state or province of residence, or
+          that you are the age of majority in your state or province of
+          residence and you have given us your consent to allow any of your
+          minor dependents to use this site. You may not use our products for
+          any illegal or unauthorized purpose nor may you, in the use of the
+          Service, violate any laws in your jurisdiction (including but not
+          limited to copyright laws). You must not transmit any worms or viruses
+          or any code of a destructive nature. A breach or violation of any of
+          the Terms will result in an immediate termination of your Services.
+        </p>
+      </section>
     </div>
   );
 };
