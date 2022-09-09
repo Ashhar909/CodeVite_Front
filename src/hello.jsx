@@ -1,9 +1,11 @@
 import React from 'react'
 
-const hello = () => {
+const Hello = () => {
   return (
-    <div>hello</div>
+    <div className='container my-3'>
+      Hello
+    </div>
   )
 }
 
-export default hello
+export default Hello
