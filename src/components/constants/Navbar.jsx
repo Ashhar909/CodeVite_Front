@@ -50,7 +50,7 @@ const Navbar = () => {
                 <li className="nav-item dropdown">
                   <Link
                     className="nav-link dropdown-toggle"
-                    to="/voyage"
+                    to="/explore"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -58,6 +58,11 @@ const Navbar = () => {
                     Explore
                   </Link>
                   <ul className="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <Link className="dropdown-item" to="/explore">
+                        Courses
+                      </Link>
+                    </li>
                     <li>
                       <Link className="dropdown-item" to="/powershot">
                         Powershot
