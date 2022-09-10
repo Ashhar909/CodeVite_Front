@@ -33,8 +33,8 @@ const Careers = () => {
           </div>
         </div>
 
-        <div className="container">
-          <form>
+        <div className="container d-flex justify-content-around" style={{borderLeft:"5px solid #dce5ef", marginLeft:"50px"}}>
+          <form style={{width:"80%", marginTop:"70px"}}>
             <div className="mb-3">
               <label htmlFor="exampleInputPassword1" className="form-label">
                 Name
