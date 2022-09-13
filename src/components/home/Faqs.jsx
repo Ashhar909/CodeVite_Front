@@ -3,115 +3,151 @@ import React from "react";
 const Faqs = () => {
   return (
     <div>
-      <h1>Privacy Policy</h1>
+      <h1>FAQs</h1>
+      <div>
+        <h5>
+          <i>Was your initial reaction after learning about us smh?</i>
+        </h5>
+        <img src="" alt="" />
+      </div>
+      <small>
+        <i>Don't worry, we have got you covered here as well!</i>
+      </small>
       <section id="section">
-        <h3>SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?</h3>
+        <h6>
+          <b>
+            Q.) How do I know that I have been accepted or rejected from one of
+            the Codevita Live’s workshops?
+          </b>
+        </h6>
         <p>
-          When you apply for any programme/job @Codevita Live, as part of the
-          buying and selling process, we collect the personal information you
-          give us such as your name and email address. When you browse our
-          store, we also automatically receive your computer’s internet protocol
-          (IP) address in order to provide us with information that helps us
-          learn about your browser and operating system.
+          Ans.) It doesn’t takes us more than a week to review your application
+          and delight you with that acceptance you have been waiting for. Beyond
+          that, it might turn out that we couldn’t accept you in that cohort .
+          There is no reason to be demotivated here ,as maybe we thought that
+          you are more suitable to be a future Puskas award winner than a STEM
+          leader, or maybe you were way too overpowered and we thought we won’t
+          be able to contribute in your growth. Or maybe just the cohorts were
+          full . In any of the case, if you want to feel how the Codevita Edge
+          feels like you can always mail us at our
+          <a href="mailto:admin@codevitalive.tech">official ID</a> to see what
+          is in store for you!
         </p>
       </section>
       <section id="section">
-        <h3>SECTION 2 - CONSENT</h3>
+        <h6>
+          <b>Q)Can I get an application fee waiver?</b>
+        </h6>
         <p>
-          How do you get my consent? When you provide us with personal
-          information to complete a transaction, verify your credit card, place
-          an order or return a purchase, we imply that you consent to our
-          collecting it and using it for completing your course enrollment only
-          and do not disclose it any 3rd party vendors or use it for marketing
-          purposes.
+          Ans.) Ofcourse! But you will have to pay us with your souls! We meant
+          putting in your hearts and souls in making the Earth a better place .
+          Mail us your application at our official Student Connect ID and follow
+          it up with a picture of tree sampling that you recently planted . We
+          will straightforward process your application.
         </p>
       </section>
       <section id="section">
-        <h3>SECTION 3 - DISCLOSURE</h3>
+        <h6>
+          <b>Q.)Can I donate or volunteer with Codevita Live ?</b>
+        </h6>
         <p>
-          We may disclose your personal information if we are required by law to
-          do so or if you violate our Terms of Service.
+          Ans.) You can definitely volunteer with Codevita Live! Mail us with
+          your proposal on our official ID and if you would like to donate some
+          goodies to the underprivileged children that we cater you could reach
+          out as well!
         </p>
       </section>
       <section id="section">
-        <h3>SECTION 4 - PAYMENT</h3>
+        <h6>
+          <b>
+            Q.)Can I request more financial aid after completing the Codevita
+            Live Scholarship Exam?
+          </b>
+        </h6>
         <p>
-          We use Instamojo for processing payments. We/Instamojo do not store
-          your card data on their servers. The data is encrypted through the
-          Payment Card Industry Data Security Standard (PCI-DSS) when processing
-          payment. Your purchase transaction data is only used as long as is
-          necessary to complete your purchase transaction. After that is
-          complete, your purchase transaction information is not saved. Our
-          payment gateway adheres to the standards set by PCI-DSS as managed by
-          the PCI Security Standards Council, which is a joint effort of brands
-          like Visa, MasterCard, American Express and Discover. PCI-DSS
-          requirements help ensure the secure handling of credit card
-          information by our store and its service providers.
+          Ans.) Ultimately, Codevita Live is a goodwill organization on a
+          mission to train children into future STEM leaders . We offer need
+          based aid as well!
         </p>
       </section>
       <section id="section">
-        <h3>SECTION 5 - THIRD-PARTY SERVICES</h3>
+        <h6>
+          <b>Q.) Can I audit Codevita Live’s courses for free?</b>
+        </h6>
         <p>
-          In general, the third-party providers used by us will only collect,
-          use and disclose your information to the extent necessary to allow
-          them to perform the services they provide to us. However, certain
-          third-party service providers, such as payment gateways and other
-          payment transaction processors, have their own privacy policies in
-          respect to the information we are required to provide to them for your
-          purchase-related transactions. For these providers, we recommend that
-          you read their privacy policies so you can understand the manner in
-          which your personal information will be handled by these providers. In
-          particular, remember that certain providers may be located in or have
-          facilities that are located a different jurisdiction than either you
-          or us. So if you elect to proceed with a transaction that involves the
-          services of a third-party service provider, then your information may
-          become subject to the laws of the jurisdiction(s) in which that
-          service provider or its facilities are located. Once you leave our
-          store’s website or are redirected to a third-party website or
-          application, you are no longer governed by this Privacy Policy or our
-          website’s Terms of Service.
+          Ans.) Well definitely yes ,provided you get accepted .Otherwise there
+          is no conventional way you can audit Codevita Live’s courses for free.
+          You can take a look at the Powershot series. You can contact us with
+          any questions on our
+          <a href="mailto:admin@codevitalive.tech">official ID</a> and we will
+          be in touch with you soon!
         </p>
       </section>
       <section id="section">
-        <h3>SECTION 6 - SECURITY</h3>
+        <h6>
+          <b>
+            Q.)Does Codevita Live provide certification? Can I flex my
+            credentials on Social Media?
+          </b>
+        </h6>
         <p>
-          To protect your personal information, we take reasonable precautions
-          and follow industry best practices to make sure it is not
-          inappropriately lost, misused, accessed, disclosed, altered or
-          destroyed.
+          Ans.) All Of Codevita Live’s courses include certification provided
+          you pass the course with an overall percentage of more than 60% . We
+          are flexible with this cutoff with children from underprivileged
+          backgrounds. You can definitely share your credentials on social
+          media.
         </p>
       </section>
       <section id="section">
-        <h3>SECTION 7 - COOKIES</h3>
+        <h6>
+          <b>Q) Does Codevita Live provide live online classes?</b>
+        </h6>
         <p>
-          We use cookies to maintain session of your user. It is not used to
-          personally identify you on other websites.
+          Ans.) We don’t provide live online classes and our modus operandi is
+          completely different. We follow a module based system where you have
+          to give an checkpoint exam related to the contents of the previous
+          week’s contents to proceed to unlock the further contents of the
+          course. This ensures that our students have a proper understanding of
+          the course contents being covered.
         </p>
       </section>
       <section id="section">
-        <h3>SECTION 8 - AGE OF CONSENT</h3>
+        <h6>
+          <b>Q.) Does Codevita Live provide placement assistance?</b>
+        </h6>
         <p>
-          By using this site, you represent that you are at least the age of
-          majority in your state or province of residence, or that you are the
-          age of majority in your state or province of residence and you have
-          given us your consent to allow any of your minor dependents to use
-          this site.
+          Ans.) Assistance? Yes. Guarantee? No. Codevita Live doesn’t forge
+          partnerships with any employers or invite any recruiter to hire it’s
+          students but provides several tools and services to assist its
+          students in achieving their goals. As we train students with a wide
+          variety of backgrounds ranging from RMIT Australia to University Of
+          Alberta in Canada, providing placement guarantee wouldn’t quite be
+          possible for us.
         </p>
       </section>
       <section id="section">
-        <h3>SECTION 9 - CHANGES TO THIS PRIVACY POLICY</h3>
+        <h6>
+          <b>Q.)What would happen if I miss a checkpoint exam?</b>
+        </h6>
+
         <p>
-          We reserve the right to modify this privacy policy at any time, so
-          please review it frequently. Changes and clarifications will take
-          effect immediately upon their posting on the website. If we make
-          material changes to this policy, we will notify you here that it has
-          been updated, so that you are aware of what information we collect,
-          how we use it, and under what circumstances, if any, we use and/or
-          disclose it. If our store is acquired or merged with another company,
-          your information may be transferred to the new owners so that we may
-          continue to sell products to you.
+          Ans.)Codevita Live is really stringent about its checkpoint exams and
+          skipping the checkpoint examination without any possible explanation
+          can result in the cancellation of your enrollment.
         </p>
       </section>
+      <section id="section">
+        <h6>
+          <b>Q.)Is Codevita Live affiliated with any educational institute?</b>
+        </h6>
+
+        <p>
+          Ans.) No. To put things into perspective, there is not much use of
+          being affiliated with ETH Zurich or UNSW when we train grads from UC
+          Berkeley and NUS.
+        </p>
+      </section>
+      <hr />
     </div>
   );
 };
