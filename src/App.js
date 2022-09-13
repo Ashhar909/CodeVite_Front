@@ -11,6 +11,7 @@ import Skill from './components/miscellaneous/Skill';
 import Refund from './components/miscellaneous/Refund'
 import Pricing from './components/miscellaneous/Pricing'
 import Terms from './components/miscellaneous/TermsCondi';
+import Explore from './components/explore/Courses';
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/careers" element={<Careers />} />
           <Route exact path="/faqs" element={<Faqs />} />
 
+          <Route exact path="/explore" element={<Explore />} />
           <Route exact path="/voyage" element={<Voyage />} />
           <Route exact path="/powershot" element={<Powershot />} />
 
