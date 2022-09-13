@@ -40,7 +40,7 @@ const Home = () => {
         </Row>
       </Container>
       <hr />
-      <Container>
+      <Container style={{ marginTop: "40px" }}>
         <h3>Experience A Learning Ecosystem Like No Other!</h3>
         <h6>
           At Codevita Live, we celebrate the innate genius inside each and every
