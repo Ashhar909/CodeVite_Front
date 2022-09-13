@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Privacy from './components/miscellaneous/Privacy';
 import Careers from './components/home/Careers';
 import Home from './components/home/Home';
@@ -12,7 +13,9 @@ import Refund from './components/miscellaneous/Refund'
 import Pricing from './components/miscellaneous/Pricing'
 import Terms from './components/miscellaneous/TermsCondi';
 import Explore from './components/explore/Courses';
-
+import Login from './components/auth/login';
+import Signup from './components/auth/signup';
+import Logout from './components/auth/logout.jsx';
 
 
 function App() {
@@ -35,6 +38,11 @@ function App() {
           <Route exact path="/skill" element={<Skill />} />
           <Route exact path="/refund" element={<Refund />} />
           <Route exact path="/pricing" element={<Pricing />} />
+
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/logout" element={<Logout />} />
+
         </Routes>
       </div>
     </BrowserRouter>
