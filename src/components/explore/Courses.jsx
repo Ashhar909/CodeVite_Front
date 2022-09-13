@@ -30,25 +30,32 @@ const Explore = () => {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <Link to='/'>
-              <img src={code} className="d-block w-100" alt="..." />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Start competitive coding from scratch</h5>
-                <p>
-                  Want to break into the competitive programming landscape but don’t
-                  know where to start?                
-                </p>
-              </div>
+              <Link to="/">
+                <img src={code} className="d-block w-100 " alt="..." />
+                <div className="carousel-caption d-none d-md-block">
+                  <h2>Start competitive coding from scratch</h2>
+                  <h5>
+                    Want to break into the competitive programming landscape but
+                    don’t know where to start?
+                  </h5>
+                </div>
               </Link>
             </div>
             <div className="carousel-item">
-              <Link to='/'>
-              <img src={cyber} className="d-block w-100" alt="..." />
-              <div className="carousel-caption d-none d-md-block">
-                <h5><Link to='/'></Link></h5>
-                <p>
-                Checkout Cybersecurity Evangelist Live- all you need to kickstart your cybersecurity career. Like all our programmes, it is supplemented with 24/7 doubt support and checkpoint exams and boasts of the same prided Codevita Live pedagogy.                </p>
-              </div>
+              <Link to="/">
+                <img src={cyber} className="d-block w-100 " alt="..." />
+                <div className="carousel-caption d-none d-md-block">
+                  <h2>
+                    <Link to="/">Cyber Security</Link>
+                  </h2>
+                  <h5>
+                    Checkout Cybersecurity Evangelist Live- all you need to
+                    kickstart your cybersecurity career. Like all our
+                    programmes, it is supplemented with 24/7 doubt support and
+                    checkpoint exams and boasts of the same prided Codevita Live
+                    pedagogy.{" "}
+                  </h5>
+                </div>
               </Link>
             </div>
           </div>

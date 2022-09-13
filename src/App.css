@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-link {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .App-logo {
@@ -36,4 +41,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container__nav {
+  background-color: #e3f2fd;
 }
