@@ -16,7 +16,7 @@ function Navbar1(props) {
 
   const handleLogout = () => {
     props.logoutUser();
-    navigate('/');
+    navigate('/login');
   }
 
   return (
