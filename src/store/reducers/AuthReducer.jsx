@@ -23,6 +23,12 @@ const AuthReducer = (state = initialState, action) => {
         ...state,
         error:action.obj.error
       }
+    case "LOGOUT":
+      return{
+          ...state,
+          token:null,
+          success:false
+      }
     case "SIGNUP_FAIL":
       return{
         ...state,
