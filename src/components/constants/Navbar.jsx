@@ -6,15 +6,17 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import "../../css/style.css";
 import { connect } from "react-redux";
 import { logout } from "../../store/actions/authActions";
+import { useNavigate } from 'react-router-dom'
 
 function Navbar1(props) {
-
+  const navigate = useNavigate();
   useEffect(() => {
     console.log(props);
   }, [props])
 
   const handleLogout = () => {
     props.logoutUser();
+    navigate('/');
   }
 
   return (
