@@ -1,13 +1,22 @@
-// import { Link } from "react-router-dom";
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import Alert from "react-bootstrap/Alert";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../../css/style.css";
+import { connect } from "react-redux";
+import { logout } from "../../store/actions/authActions";
 
-function Navbar1() {
+function Navbar1(props) {
+
+  useEffect(() => {
+    console.log(props);
+  }, [props])
+
+  const handleLogout = () => {
+    props.logoutUser();
+  }
+
   return (
     <>
       <Navbar className="nav-fix" collapseOnSelect expand="lg">
@@ -47,12 +56,16 @@ function Navbar1() {
                 <NavDropdown.Item href="/faqs">FAQs</NavDropdown.Item>
               </NavDropdown>
             </Nav>
+            {!props.authStatus.success?
             <Nav>
-              <Nav.Link href="/login">Log in</Nav.Link>
+              <Nav.Link  href="/login">Log in</Nav.Link>
               <Nav.Link eventKey={2} href="/signup">
                 Sign up
               </Nav.Link>
-            </Nav>
+            </Nav>: 
+            <Nav>
+              <Nav.Link onClick={handleLogout}>Log out</Nav.Link>
+            </Nav>}
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -60,4 +73,16 @@ function Navbar1() {
   );
 }
 
-export default Navbar1;
+const mapStateToProps = (state) => {
+  return {
+    authStatus : state.authR
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    logoutUser: () => dispatch(logout())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar1)

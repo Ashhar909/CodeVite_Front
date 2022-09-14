@@ -52,3 +52,9 @@ export const LoginUser = (creds) => {
       }
     };
   };
+
+export const logout = () => {
+  return({
+      type: "LOGOUT"
+    })
+}
