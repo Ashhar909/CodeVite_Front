@@ -13,8 +13,8 @@ const CareerForm = (data) => {
         .then(()=>{
             console.log("saved")
             dispatch({
-            type:"ADD_FORM",
-            status:true
+              type:"ADD_FORM",
+              status:true
             })
         }).catch((err) => {
             console.log(err.message);

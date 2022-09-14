@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
       <Container>
-        <Image src={Laptop} fluid width="1450px" />
+        <Image src={Laptop} fluid style={{width:"1450px", height:"700px"}} />
         <Button variant="warning">Review Pricing</Button>{" "}
         <Button variant="primary">Explore Other Programs</Button>{" "}
       </Container>
