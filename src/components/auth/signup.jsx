@@ -6,29 +6,28 @@ import { createUser } from "../../store/actions/authActions";
 import { connect } from "react-redux";
 
 function Register(props) {
-    const Navigate = useNavigate();
-    const [values, setValues] = useState({
-      username: "",
-      email: "",
-      password: "",
-      confirmPassword:""
-    });
+  const Navigate = useNavigate();
+  const [values, setValues] = useState({
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
 
-    const handleChange = (event) => {
-      setValues({ ...values, [event.target.name]: event.target.value });
-    };
+  const handleChange = (event) => {
+    setValues({ ...values, [event.target.name]: event.target.value });
+  };
 
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      if(values.confirmPassword === values.password){
-        props.registerUser(values);
-      }
-      else{
-        console.log("Passwords dont match")
-      }
-      // console.log(props);
-      Navigate('/');
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (values.confirmPassword === values.password) {
+      props.registerUser(values);
+    } else {
+      console.log("Passwords dont match");
     }
+    // console.log(props);
+    Navigate("/");
+  };
 
   return (
     <>
@@ -36,7 +35,7 @@ function Register(props) {
         <form action="" onSubmit={handleSubmit}>
           <div className="brand">
             <img src={Logo} alt="logo" />
-            <h1>Chat App</h1>
+            <h1>Sign Up</h1>
           </div>
           <input
             type="text"
@@ -74,7 +73,7 @@ function Register(props) {
 }
 
 const FormContainer = styled.div`
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -143,15 +142,15 @@ const FormContainer = styled.div`
 `;
 
 const mapStateToProps = (state) => {
-  return{
-    authStatus: state.authR
-  }
-}
+  return {
+    authStatus: state.authR,
+  };
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    registerUser : (creds) => dispatch(createUser(creds))
-  }
-}
+    registerUser: (creds) => dispatch(createUser(creds)),
+  };
+};
 
-export default connect(mapStateToProps,mapDispatchToProps)(Register)
+export default connect(mapStateToProps, mapDispatchToProps)(Register);

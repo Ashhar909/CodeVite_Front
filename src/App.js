@@ -23,28 +23,26 @@ function App() {
     <BrowserRouter>
       <Navbar />
       {/* <Alert message="hello alert"/> */}
-      <div className='container'>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/careers" element={<Careers />} />
-          <Route exact path="/faqs" element={<Faqs />} />
 
-          <Route exact path="/explore" element={<Explore />} />
-          <Route exact path="/voyage" element={<Voyage />} />
-          <Route exact path="/powershot" element={<Powershot />} />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/careers" element={<Careers />} />
+        <Route exact path="/faqs" element={<Faqs />} />
 
-          <Route exact path="/privacy" element={<Privacy />} />
-          <Route exact path="/term" element={<Terms />} />
-          <Route exact path="/skill" element={<Skill />} />
-          <Route exact path="/refund" element={<Refund />} />
-          <Route exact path="/pricing" element={<Pricing />} />
+        <Route exact path="/explore" element={<Explore />} />
+        <Route exact path="/voyage" element={<Voyage />} />
+        <Route exact path="/powershot" element={<Powershot />} />
 
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/signup" element={<Signup />} />
-          <Route exact path="/logout" element={<Logout />} />
+        <Route exact path="/privacy" element={<Privacy />} />
+        <Route exact path="/term" element={<Terms />} />
+        <Route exact path="/skill" element={<Skill />} />
+        <Route exact path="/refund" element={<Refund />} />
+        <Route exact path="/pricing" element={<Pricing />} />
 
-        </Routes>
-      </div>
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/signup" element={<Signup />} />
+        <Route exact path="/logout" element={<Logout />} />
+      </Routes>
     </BrowserRouter>
   );
 }
