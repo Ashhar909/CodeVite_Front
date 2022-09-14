@@ -2,7 +2,7 @@ import React from "react";
 
 const Terms = () => {
   return (
-    <div>
+    <div id="terms">
       <h1>Terms and Conditions</h1>
       <section id="section">
         <h3>OVERVIEW</h3>
@@ -383,7 +383,7 @@ const Terms = () => {
         </p>
       </section>
     </div>
-  )
-}
+  );
+};
 
 export default Terms;

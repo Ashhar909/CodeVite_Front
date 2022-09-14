@@ -1,37 +1,36 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Career from "../../assets/Career.jpeg";
-import { useNavigate } from 'react-router'
+import { useNavigate } from "react-router";
 import { connect } from "react-redux";
 import CareerForm from "../../store/actions/FormActions";
 
 const Careers = (props) => {
-  const Navigate = useNavigate()
+  const Navigate = useNavigate();
   const [data, setData] = useState({
-    name:"",
-    email:"",
-    number:"",
-    college:"",
-    appliedFor:""
-  })
+    name: "",
+    email: "",
+    number: "",
+    college: "",
+    appliedFor: "",
+  });
 
   const handleChange = (e) => {
     setData({
-      ...data,[e.target.name]:e.target.value
-    })
-  }
+      ...data,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     props.submitForm(data);
-    console.log(data)
-    Navigate('/')
-  }
+    console.log(data);
+    Navigate("/");
+  };
 
   return (
     <div>
-      <h1>
-        Careers @ <b>Code</b>Vita Live
-      </h1>
+      <h1>Careers @ CodeVita Live</h1>
       <div className="container d-flex justify-content-around my-3">
         <div className="container">
           <img
@@ -58,8 +57,14 @@ const Careers = (props) => {
           </div>
         </div>
 
-        <div className="container d-flex justify-content-around" style={{borderLeft:"5px solid #dce5ef", marginLeft:"50px"}}>
-          <form style={{width:"80%", marginTop:"70px"}} onSubmit={handleSubmit}>
+        <div
+          className="container d-flex justify-content-around"
+          style={{ borderLeft: "5px solid #dce5ef", marginLeft: "50px" }}
+        >
+          <form
+            style={{ width: "80%", marginTop: "70px" }}
+            onSubmit={handleSubmit}
+          >
             <div className="mb-3">
               <label htmlFor="exampleInputPassword1" className="form-label">
                 Name
@@ -68,8 +73,8 @@ const Careers = (props) => {
                 type="text"
                 className="form-control"
                 id="exampleInputPassword1"
-                name = "name"
-                value= {data.name}
+                name="name"
+                value={data.name}
                 onChange={handleChange}
                 required
               />
@@ -84,13 +89,12 @@ const Careers = (props) => {
                 className="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
-                name = "email"
-                value= {data.email}
+                name="email"
+                value={data.email}
                 onChange={handleChange}
                 required
               />
             </div>
-
             <div className="mb-3">
               <label htmlFor="exampleInputPassword1" className="form-label">
                 Phone Number
@@ -99,8 +103,8 @@ const Careers = (props) => {
                 type="text"
                 className="form-control"
                 id="exampleInputPassword1"
-                name = "number"
-                value= {data.number}
+                name="number"
+                value={data.number}
                 onChange={handleChange}
               />
             </div>
@@ -113,8 +117,8 @@ const Careers = (props) => {
                 type="text"
                 className="form-control"
                 id="exampleInputPassword1"
-                name = "college"
-                value= {data.college}
+                name="college"
+                value={data.college}
                 onChange={handleChange}
                 required
               />
@@ -122,25 +126,27 @@ const Careers = (props) => {
 
             <div className="mb-3">
               <label htmlFor="exampleInputPassword1" className="form-label">
-              Post You Are Applying For( Content Developer/SDE/BDA/Web Developer)
+                Post You Are Applying For( Content Developer/SDE/BDA/Web
+                Developer)
               </label>
               <input
                 type="text"
                 className="form-control"
                 id="exampleInputPassword1"
-                name = "appliedFor"
-                value= {data.appliedFor}
+                name="appliedFor"
+                value={data.appliedFor}
                 onChange={handleChange}
                 required
               />
             </div>
-            
-            <button type="submit" className="btn btn-primary">
+
+            <button id="btn__one" type="submit" className="btn btn-primary">
               Submit
             </button>
-              <div id="emailHelp" className="form-text">
-              We are based on Pune, India and all non-technical roles are WFH until further notice.
-              </div>
+            <div id="emailHelp" className="form-text">
+              We are based on Pune, India and all non-technical roles are WFH
+              until further notice.
+            </div>
           </form>
         </div>
       </div>
@@ -148,18 +154,16 @@ const Careers = (props) => {
   );
 };
 
-
 const mapStateToProps = (state) => {
   return {
-    authState: state.authR
+    authState: state.authR,
   };
-}
+};
 
 const mapDispathToProps = (dispatch) => {
-  return{
-    submitForm: (data) => dispatch(CareerForm(data))
-  }
-}
-
+  return {
+    submitForm: (data) => dispatch(CareerForm(data)),
+  };
+};
 
 export default connect(mapStateToProps, mapDispathToProps)(Careers);

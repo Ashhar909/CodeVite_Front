@@ -1,7 +1,101 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(170deg, #d8c2fc58, #f186a42b);
 }
 
 .font-link {
     font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Home page*/
+#section__one {
+    text-align: center;
+    filter: grayscale(10%) brightness(90%);
+    margin: 40px 0 40px 0;
+    background-image: url("../assets/laptop.jpg");
+    width: 1450px;
+    height: 500px;
+}
+
+#btn__one {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px;
+}
+
+#btn__one:hover {
+    filter: grayscale(20%);
+}
+
+#section__two {
+    background: linear-gradient(140deg, #d8c2fc58, #f186a42b);
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-shadow: 2px 2px #f5056d;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+#section__three {
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+#section__four {
+    padding: 40px;
+    background: linear-gradient(130deg, #bde0fe71, #bbd0ff90);
+    box-shadow: 0 0 8px 8px #d8c2fc58 inset;
+}
+
+#col__last {
+    margin: 40px;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(150deg, #f7aef8, #4cc9f0);
+    border: 2px solid #b395f7;
+}
+
+/* Nav Bar */
+.nav-fix {
+    background: linear-gradient(90deg, #D0BCFF, #b395f7);
+    font-weight: 700;
+    font-size: large;
+    /* background-color: #D0BCFF; */
+}
+
+#nav-brand {
+    padding-right: 190px;
+}
+
+
+
+
+/* Terms and Conditions, Privacy and Refund*/
+#terms {
+    margin: 40px;
+    text-align: justify;
+}
+
+#section {
+    padding: 20px 40px 20px 20px;
+}
+
+#refund {
+    text-align: center;
+    margin: 0 80px 30px 80px;
 }
