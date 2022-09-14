@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../../assets/logo.svg";
@@ -6,18 +6,18 @@ import { connect } from "react-redux";
 import { LoginUser } from "../../store/actions/authActions";
 
 function Login(props) {
-    const navigate = useNavigate();
-    const [values, setValues] = useState({ username: "", password: "" });
+  const navigate = useNavigate();
+  const [values, setValues] = useState({ username: "", password: "" });
 
-    const handleChange = (event) => {
-      setValues({ ...values, [event.target.name]: event.target.value });
-    };
+  const handleChange = (event) => {
+    setValues({ ...values, [event.target.name]: event.target.value });
+  };
 
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      props.logiCreds(values);
-      navigate('/');
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    props.logiCreds(values);
+    navigate("/");
+  };
 
   return (
     <>
@@ -25,7 +25,7 @@ function Login(props) {
         <form action="" onSubmit={handleSubmit}>
           <div className="brand">
             <img src={Logo} alt="logo" />
-            <h1>Chat App</h1>
+            <h1>LogIn</h1>
           </div>
           <input
             type="text"
@@ -42,7 +42,7 @@ function Login(props) {
           />
           <button type="submit">Log In</button>
           <span>
-            Don't have an account ? <Link to="/register">Create One.</Link>
+            Don't have an account ? <Link to="/signup">Create One.</Link>
           </span>
         </form>
       </FormContainer>
@@ -52,6 +52,7 @@ function Login(props) {
 }
 
 const FormContainer = styled.div`
+  margin: 0;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -120,16 +121,16 @@ const FormContainer = styled.div`
   }
 `;
 
-const mapStateToProps = (state) =>{
-  return{
-    authState : state.authR
-  }
-}
+const mapStateToProps = (state) => {
+  return {
+    authState: state.authR,
+  };
+};
 
 const mapDispatchToProps = (dispatch) => {
-  return{
-    logiCreds : (creds) => dispatch(LoginUser(creds))
-  }
-}
+  return {
+    logiCreds: (creds) => dispatch(LoginUser(creds)),
+  };
+};
 
-export default connect(mapStateToProps,mapDispatchToProps)(Login);
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

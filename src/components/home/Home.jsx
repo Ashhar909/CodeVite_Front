@@ -1,5 +1,4 @@
 import React from "react";
-import Laptop from "../../assets/laptop.jpg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -17,29 +16,30 @@ import "../../css/style.css";
 const Home = () => {
   return (
     <>
-      <Container id="section__one">
-        <h2
-          style={{
-            color: "white",
-            fontSize: "40px",
-            fontWeight: "bold",
-            textAlign: "center",
-            padding: "140px 80px 30px 80px",
-          }}
-        >
-          At Codevita Live, we introduce future STEM leaders into the
-          intellectual premises of computer science.
-        </h2>
-        {/* <Image src={Laptop} fluid width="1450px" /> */}
-        <Button id="btn__one" variant="warning">
-          Review Pricing
-        </Button>{" "}
-        <br /> <br />
-        <Button id="btn__one" variant="primary">
-          Explore Other Programs
-        </Button>{" "}
+      <Container>
+        <div id="section__one">
+          <h2
+            style={{
+              color: "white",
+              fontSize: "40px",
+              fontWeight: "bold",
+              textAlign: "center",
+              padding: "140px 80px 30px 80px",
+            }}
+          >
+            At Codevita Live, we introduce future STEM leaders into the
+            intellectual premises of computer science.
+          </h2>
+          {/* <Image src={Laptop} fluid width="1450px" /> */}
+          <Button id="btn__one" variant="warning">
+            Review Pricing
+          </Button>{" "}
+          <br /> <br />
+          <Button id="btn__one" variant="primary">
+            Explore Other Programs
+          </Button>{" "}
+        </div>
       </Container>
-      <hr />
 
       <Container id="section__two">
         <Row>
