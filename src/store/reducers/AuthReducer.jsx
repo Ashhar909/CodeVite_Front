@@ -5,7 +5,32 @@ const initialState = {
 }
 
 const AuthReducer = (state = initialState, action) => {
-  return state;
+  switch(action.type){
+    case "SIGNUP_SUCCESS":
+      return{
+        ...state,
+        token:action.obj.authtoken,
+        success:action.obj.success
+      }
+    case "LOGIN_SUCCESS":
+      return{
+        ...state,
+        token:action.obj.authtoken,
+        success:action.obj.success
+      }
+    case "LOGIN_FAIL":
+      return{
+        ...state,
+        error:action.obj.error
+      }
+    case "SIGNUP_FAIL":
+      return{
+        ...state,
+        error:action.obj.error
+      }
+    default:
+      return state;
+  }
 }
 
 export default AuthReducer
