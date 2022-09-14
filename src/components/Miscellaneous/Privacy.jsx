@@ -2,7 +2,7 @@ import React from "react";
 
 const Privacy = () => {
   return (
-    <div>
+    <div id="terms">
       <h1>Privacy Policy</h1>
       <section id="section">
         <h3>SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?</h3>

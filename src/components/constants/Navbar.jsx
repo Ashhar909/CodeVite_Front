@@ -5,22 +5,14 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // import Alert from "react-bootstrap/Alert";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import "../../css/style.css";
 
 function Navbar1() {
   return (
     <>
-      <style type="text/css">
-        {`
-    .nav-fix{
-      background-color: #e3f2fd;
-      color: white;
-      box-shadow: 1px 2px 1px grey;
-    }
-    `}
-      </style>
       <Navbar className="nav-fix" collapseOnSelect expand="lg">
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand id="nav-brand" href="/">
             <b>CodeVita</b>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
