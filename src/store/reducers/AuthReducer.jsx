@@ -1,42 +1,42 @@
 const initialState = {
-    error:null,
-    token:null,
-    success:false
-}
+  error: null,
+  token: null,
+  success: false,
+};
 
 const AuthReducer = (state = initialState, action) => {
-  switch(action.type){
+  switch (action.type) {
     case "SIGNUP_SUCCESS":
-      return{
+      return {
         ...state,
-        token:action.obj.authtoken,
-        success:action.obj.success
-      }
+        token: action.obj.authtoken,
+        success: action.obj.success,
+      };
     case "LOGIN_SUCCESS":
-      return{
+      return {
         ...state,
-        token:action.obj.authtoken,
-        success:action.obj.success
-      }
+        token: action.obj.authtoken,
+        success: action.obj.success,
+      };
     case "LOGIN_FAIL":
-      return{
+      return {
         ...state,
-        error:action.obj.error
-      }
+        error: action.obj.error,
+      };
     case "LOGOUT":
-      return{
-          ...state,
-          token:null,
-          success:false
-      }
-    case "SIGNUP_FAIL":
-      return{
+      return {
         ...state,
-        error:action.obj.error
-      }
+        token: null,
+        success: false,
+      };
+    case "SIGNUP_FAIL":
+      return {
+        ...state,
+        error: action.obj.error,
+      };
     default:
       return state;
   }
-}
+};
 
-export default AuthReducer
+export default AuthReducer;

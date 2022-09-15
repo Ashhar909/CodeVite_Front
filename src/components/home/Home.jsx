@@ -16,7 +16,7 @@ import "../../css/style.css";
 const Home = () => {
   return (
     <>
-      <Container style={{marginLeft:"150px"}}>
+      <Container>
         <div id="section__one">
           <h2
             style={{

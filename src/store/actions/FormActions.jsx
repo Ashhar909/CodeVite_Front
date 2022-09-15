@@ -1,3 +1,5 @@
+import * as actionTypes from "./actionTypes";
+
 const CareerForm = (data) => {
   return async (dispatch) => {
     await fetch("http://localhost:3005/career", {
